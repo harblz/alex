@@ -30,8 +30,17 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use jquery for rails
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
 # Use bootstrap css framework
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0'
+
+# Use fontawesome for icons
+gem 'font-awesome-sass'
+
+# Use momentjs to localize time in the browser
+gem 'momentjs-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
