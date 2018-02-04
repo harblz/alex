@@ -180,6 +180,8 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bootstrap (~> 4.0.0)
