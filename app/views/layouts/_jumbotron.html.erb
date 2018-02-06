@@ -1,0 +1,56 @@
+<div class="container">
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#">Blog</a>
+      <a class="p-2 text-muted" href="https://www.aba.rocks">ABA.rocks</a>
+      <a class="p-2 text-muted" href="/resume">CV</a>
+      <a class="p-2 text-muted" href="https://madebyalex.tech">My Projects</a>
+      <a class="p-2 text-muted" href="/about">About Me</a>
+    </nav>
+  </div>
+
+
+
+  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+      <h1 class="display-4 font-italic">
+        <%= raw( @articles.last.title ) %>
+      </h1>
+      <p class="lead my-3">
+       <%= truncate( raw( @articles.last.text ), length:140) %>
+      </p>
+      <p class="lead mb-0">
+        <%= link_to 'Continue Reading...', article_path(@articles.last), :class => "text-white font-weight-bold" %>
+      </p>
+    </div>
+  </div>
+
+  <!--
+  <div class="row mb-2">
+    <% @articles.each do |article| %>
+      <div class="col-md-6">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">
+            <a class="text-dark" href="#">
+              <%= article.title %>
+            </a>
+          </h3>
+          <div class="timestring mb-1 text-muted">
+            <%= article.created_at %>
+          </div>
+          <p class="card-text mb-auto">
+            <%= truncate( article.text, length:140) %>
+          </p>
+          <%= link_to 'Continue Reading...', article_path(article) %>
+        </div>
+        <%= image_tag "thumbnail.svg" %>
+      </div>
+      </div>
+    <% end %>
+
+  </div>
+  !-->
+</div>

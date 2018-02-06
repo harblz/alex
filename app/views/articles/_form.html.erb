@@ -15,17 +15,18 @@
   <% end %>
  
   <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label 'Post Title' %><br>
+    <%= form.text_field :title, :class => 'form-control' %>
   </p>
  
   <p>
-    <%= form.label :text %><br>
-    <%= form.text_area :text %>
+    <%= form.label 'Compose your post below, or copy paste it from elsewhere - HTML is accepted but escaped.' %><br>
+    <%= form.text_area :text, :class => 'ckeditor' %>
+    
   </p>
  
   <p>
-    <%= form.submit %>
+    <%= form.submit 'Submit Changes', :class => 'btn btn-success' %>
   </p>
  
 <% end %>

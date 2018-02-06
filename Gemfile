@@ -42,6 +42,9 @@ gem 'font-awesome-sass'
 # Use momentjs to localize time in the browser
 gem 'momentjs-rails'
 
+# Use CKEDITOR for editing form fields
+gem 'ckeditor_rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
